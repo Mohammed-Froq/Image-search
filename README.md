@@ -1,4 +1,4 @@
-##🔍 CLIP Image Search (Safetensors)
+**🔍 CLIP Image Search (Safetensors)**
 A local image similarity search app using OpenAI’s CLIP model (ViT-B/32) with safetensors. This app allows you to upload an image and find visually similar images from a local image folder using embeddings computed by CLIP.
 
 ##Table of Contents

@@ -3,6 +3,7 @@
 A local image similarity search app using OpenAI’s CLIP model (ViT-B/32) with safetensors. This app allows you to upload an image and find visually similar images from a local image folder using embeddings computed by CLIP.
 
 ***Table of Contents***
+
 1.Features
 2.Demo
 3.Requirements
@@ -13,6 +14,7 @@ A local image similarity search app using OpenAI’s CLIP model (ViT-B/32) with 
 8.Usage
 
 ***Features***
+
 🔹 Compute embeddings for all images in a local folder.
 🔹 Find the top-K visually similar images to a query image.
 🔹 Efficient caching with pickle to avoid recomputing embeddings.
@@ -20,11 +22,13 @@ A local image similarity search app using OpenAI’s CLIP model (ViT-B/32) with 
 🔹 Streamlit UI for interactive use.
 
 ***Demo***
+
 * Upload an image (JPEG/PNG)
 * View top 10 similar images with confidence %
 * Works entirely offline using local CLIP model
 
 ***Requirements***
+
 -> Python 3.10+ and the following libraries:
 
 streamlit==1.29.0
@@ -38,9 +42,11 @@ safetensors==0.3.2
 
 
 ***Install all dependencies:***
+
 pip install -r requirements.txt
 
 ***Installation***
+
 1.Clone the repo:
 
 git clone https://github.com/Mohammed-Froq/Image-search.git
@@ -68,6 +74,7 @@ HuggingFace model: openai/clip-vit-base-patch32
 ~/.cache/huggingface/hub/models--openai--clip-vit-base-patch32/snapshots/<snapshot_hash>
 
 ***Folder Structure***
+
 Image-search/
 │
 ├─ main.py                          # Main Streamlit app
@@ -77,6 +84,7 @@ Image-search/
 └─ README.md
 
 ***How it Works (Technical Details)***
+
 1.Model Loading
 * Uses CLIP ViT-B/32 in safetensors format.
 * Model is loaded with:
@@ -113,6 +121,7 @@ sim = cosine_similarity(query_emb, np.vstack(all_embeddings))
 8.Using local files only ensures offline functionality and avoids repeated downloads.
 
 ***Usage***
+
 * Make sure images are in the Images/ folder.
 * Run the app:
 
@@ -122,4 +131,5 @@ streamlit run main.py
 * Upload an image and see top similar images with confidence scores.
 
 ***License***
+
 MIT License — Free to use for personal and commercial projects.

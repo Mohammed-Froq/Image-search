@@ -47,14 +47,14 @@ Upload an image and find visually similar images from a local image folder using
 
 Python 3.10+ and the following libraries:
 
-streamlit==1.29.0
-numpy==1.26.0
-Pillow==10.0.0
-tqdm==4.66.1
-torch==2.2.0
-transformers==4.54.0
-scikit-learn==1.3.1
-safetensors==0.3.2
+- streamlit==1.29.0
+- numpy==1.26.0
+- Pillow==10.0.0
+- tqdm==4.66.1
+- torch==2.2.0
+- transformers==4.54.0
+- scikit-learn==1.3.1
+- safetensors==0.3.2
 
 ---
 

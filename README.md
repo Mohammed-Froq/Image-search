@@ -85,7 +85,6 @@ pip install -r requirements.txt
 
 Image-search/
 
-|
 +-- main.py                                # Main Streamlit app
 
 +-- clip_image_embeddings_safetensors.pkl  # Cached embeddings
@@ -131,11 +130,17 @@ sim = cosine_similarity(query_emb, np.vstack(all_embeddings))
 ## **Model Information**
 
 1.Model Name: CLIP ViT-B/32
+
 2.Provider: OpenAI
+
 3.HuggingFace Link: clip-vit-base-patch32
+
 4.Type: Vision Transformer (ViT)
+
 5.Input Size: 224x224 RGB images
+
 6.Output: 512-dimensional feature vectors
+
 7.Weights Format: safetensors (safe and fast for PyTorch)
 
 - Using local files ensures offline functionality and avoids repeated downloads.

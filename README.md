@@ -84,6 +84,7 @@ pip install -r requirements.txt
 ## **Folder Structure**
 
 Image-search/
+
 |
 +-- main.py                                # Main Streamlit app
 

@@ -85,13 +85,13 @@ pip install -r requirements.txt
 
 Image-search/
 
-+-- main.py                                # Main Streamlit app
++-- main.py                                   # Main Streamlit app
 
-+-- clip_image_embeddings_safetensors.pkl  # Cached embeddings
++-- clip_image_embeddings_safetensors.pkl     # Cached embeddings
 
-+-- Images/                                # Folder containing images to search
++-- Images/                                   # Folder containing images to search
 
-+-- requirements.txt                       # Python dependencies
++-- requirements.txt                          # Python dependencies
 
 ---
 
